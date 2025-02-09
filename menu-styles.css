@@ -1,0 +1,131 @@
+/* القواعد العامة */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9f3e5, #e0c7a0);
+    color: #333;
+    text-align: center;
+}
+
+/* الهيدر */
+.menu-header {
+    background-color: #8B4513; /* بني يشبه ألوان الخشب */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+/* الحاوية للزراير */
+.buttons-container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* تصميم الزراير */
+.menu-button {
+    background-color: #D2691E; /* لون برتقالي محروق */
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-button:hover {
+    background-color: #B22222; /* لون أحمر طوبي */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-button:active {
+    transform: scale(1);
+}
+
+/* الفوتر */
+footer {
+    margin-top: 50px;
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+/* نافذة الصورة */
+.modal {
+    display: none; /* مخفي افتراضيًا */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* محتوى النافذة */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* العنوان تحت الصورة */
+#caption {
+    margin: 15px auto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* زر الإغلاق */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+/* تأثير الصورة */
+.modal-content:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+/* لتنسيق صور المنيو */
+.menu-item img {
+    width: 60%; /* حدد الحجم كنسبة مئوية */
+    height: auto; /* يحافظ على النسبة بين العرض والارتفاع */
+    margin: 10px auto; /* إضافة مسافة حول الصور */
+    display: block; /* لجعل الصور تظهر في المنتصف */
+    border-radius: 10px; /* حواف دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    transition: transform 0.3s ease; /* تأثير عند التحويم */
+}
+
+/* تأثير عند تمرير الماوس */
+.menu-item img:hover {
+    transform: scale(1.05); /* تكبير بسيط عند التحويم */
+}

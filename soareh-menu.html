@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو الإفطار</title>
+    <link rel="stylesheet" href="menu-styles.css">
+</head>
+<body>
+    <header class="menu-header">
+        <h1>منيو سواريه</h1>
+    </header>
+
+    <div class="menu-content">
+        <div class="menu-item">
+            <img src="images/منيو سواريه_compressed_page-0001.jpg" alt="منيو سواريه 1"onclick="openImage(this)">
+        </div>
+        <div class="menu-item">
+            <img src="images/منيو سواريه_compressed_page-0002.jpg" alt="منيو سواريه 2"onclick="openImage(this)">
+        </div>
+        <div class="menu-item">
+            <img src="images/منيو سواريه_compressed_page-0003.jpg" alt="منيو سواريه 3"onclick="openImage(this)">
+        </div>
+        <div class="menu-item">
+            <img src="images/منيو سواريه_compressed_page-0004.jpg" alt="منيو سواريه 4"onclick="openImage(this)">
+        </div>
+    </div>
+    <!-- نافذة عرض الصورة -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025 - مطعم دار المدرعات</p>
+        <p>Back to <a href="index.html">Home</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
